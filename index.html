@@ -1,0 +1,63 @@
+<htlm>
+  <head>
+    <title> Online Registration Forum </title>
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+    <link rel="stylesheet" content="text-css" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1 class="top"> the code review </h1>
+    </header>
+    <main>
+      <div class="first-part">
+        <h2> Signup for our newsletter </h2>
+        <p> Get the latest news on how your code is doing right in your inbox </p>
+      </div>
+      <form action="index.html" method="post">
+        <fieldset id="contact" class="container">
+          <h2> contact information </h2>
+          <label for="name"> full name </label>
+          <input type="text" name="user-name" id="name">
+          <label for="mail"> e-mail address </label>
+          <input type="email" name="user-email" id="mail">
+          <label for="number"> phone number </label>
+          <input type="text" name="user-number" id="number">
+          <label for="address"> street address </label>
+          <input type="text" name="user-address" id="address">
+          <label for="city"> city </label>
+          <input type="city" name="user-city" id="city">
+          <label for="state"> state </label>
+          <select name="user-city" id="state">
+            <option value="city-1"> city 1 </option>
+            <option value="city-2"> city 2 </option>
+            <option value="city-3"> city 3 </option>
+            <option value="city-4"> city 4 </option>
+            <option value="city-5"> city 5 </option>
+          </select>
+          <label for="zipcode"> zip code </label>
+          <input type="text" name="user-zipcode" id="zipcode">
+        </fieldset>
+        <fieldset id="newsletter" class="container">
+          <h2> newsletter </h2>
+          <label> select the newsletters you would like to recieve </label>
+          <ul>
+            <li><input type="checkbox" value="news" id="html-news"> HTML news </input></li>
+            <li><input type="checkbox" value="news" id="css-news"> CSS news </input></li>
+            <li><input type="checkbox" value="news" id="javascript-news"> Javascript news </input></li>
+          </ul>
+          <label> newsletter format </label>
+          <ul>
+            <li><input type="radio" name="user-format" id="html-format"> HTML </input></li>
+            <li><input type="radio" name="user-format" id="text-format"> Plain text </input></li>
+          </ul>
+          <label for="topics"> other topics you'd like to hear about </label>
+          <textarea name="user-topics" id="topics"></textarea>
+          <button type="sudmit"> Sign Up </button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p> copyright The Code Review <p>
+    </footer>
+  </body>
+</html>
