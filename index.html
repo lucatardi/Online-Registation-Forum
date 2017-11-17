@@ -11,46 +11,47 @@
     <main>
       <div class="first-part">
         <h2> Signup for our newsletter </h2>
-        <p> Get the latest news on how your code is doing right in your inbox </p>
+        <p class="intro"> Get the latest news on how your code is doing right in your inbox </p>
       </div>
       <form action="index.html" method="post">
         <fieldset id="contact" class="container">
-          <h2> contact information </h2>
-          <label for="name"> full name </label>
-          <input type="text" name="user-name" id="name">
-          <label for="mail"> e-mail address </label>
-          <input type="email" name="user-email" id="mail">
-          <label for="number"> phone number </label>
-          <input type="text" name="user-number" id="number">
-          <label for="address"> street address </label>
-          <input type="text" name="user-address" id="address">
-          <label for="city"> city </label>
-          <input type="city" name="user-city" id="city">
-          <label for="state"> state </label>
+          <h2> Contact Information </h2>
+          <div class="group clearfix"><label for="name"> Full Name </label>
+          <input type="text" name="user-name" id="name" placeholder="Required"></div>
+          <div class="group clearfix"><label for="mail"> E-mail Address </label>
+          <input type="email" name="user-email" id="mail" placeholder="Required"></div>
+          <div class="group clearfix"><label for="number"> Phone Number </label>
+          <input type="text" name="user-number" id="number"></div>
+          <div class="group clearfix"><label for="address"> Street Address </label>
+          <input type="text" name="user-address" id="address"></div>
+          <div class="group clearfix"><label for="city"> City </label>
+          <input type="city" name="user-city" id="city"></div>
+          <div class="group clearfix"><label for="state"> State </label>
           <select name="user-city" id="state">
-            <option value="city-1"> city 1 </option>
-            <option value="city-2"> city 2 </option>
-            <option value="city-3"> city 3 </option>
-            <option value="city-4"> city 4 </option>
-            <option value="city-5"> city 5 </option>
-          </select>
-          <label for="zipcode"> zip code </label>
-          <input type="text" name="user-zipcode" id="zipcode">
+            <option value="" disabled selected>Choose State</option>
+            <option value="city-1"> City 1 </option>
+            <option value="city-2"> City 2 </option>
+            <option value="city-3"> City 3 </option>
+            <option value="city-4"> City 4 </option>
+            <option value="city-5"> City 5 </option>
+          </select></div>
+          <div class="group clearfix"><label for="zipcode"> Zip Code </label>
+          <input type="text" name="user-zipcode" id="zipcode"></div>
         </fieldset>
         <fieldset id="newsletter" class="container">
-          <h2> newsletter </h2>
-          <label> select the newsletters you would like to recieve </label>
+          <h2> Newsletter </h2>
+          <label> Select the newsletters you would like to recieve </label>
           <ul>
-            <li><input type="checkbox" value="news" id="html-news"> HTML news </input></li>
-            <li><input type="checkbox" value="news" id="css-news"> CSS news </input></li>
-            <li><input type="checkbox" value="news" id="javascript-news"> Javascript news </input></li>
+            <li><input type="checkbox" value="news" id="html-news"> <span>HTML News</span> </input></li>
+            <li><input type="checkbox" value="news" id="css-news"> <span>CSS News</span> </input></li>
+            <li><input type="checkbox" value="news" id="javascript-news"> <span>Javascript News</span> </input></li>
           </ul>
-          <label> newsletter format </label>
+          <label> Newsletter format </label>
           <ul>
-            <li><input type="radio" name="user-format" id="html-format"> HTML </input></li>
-            <li><input type="radio" name="user-format" id="text-format"> Plain text </input></li>
+            <li><input type="radio" name="user-format" id="html-format"> <span>HTML</span> </input></li>
+            <li><input type="radio" name="user-format" id="text-format"> <span>Plain Text</span> </input></li>
           </ul>
-          <label for="topics"> other topics you'd like to hear about </label>
+          <label for="topics"> Other topics you'd like to hear about </label>
           <textarea name="user-topics" id="topics"></textarea>
           <button type="sudmit"> Sign Up </button>
         </fieldset>
