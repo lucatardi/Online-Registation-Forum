@@ -41,6 +41,10 @@ p {
   font-style: italic;
 }
 
+.intro {
+  color: white;
+}
+
 /*---------------------- divs styles --------------------------*/
 
 header {
@@ -51,6 +55,7 @@ header {
 .first-part {
   text-align: center;
   padding-bottom: 20px;
+  background-color: #898DFF;
 }
 
 main {
@@ -72,6 +77,8 @@ fieldset {
 .first-container {
   border-bottom: 2px black solid;
 }
+
+
 
 /*----------------------------- Forum Style ----------------------------------*/
 #contact input,
@@ -130,12 +137,13 @@ button {
   font-style: italic;
 }
 
-form:focus {
-  border: 5px solid lightblue;
-}
 
 h1:hover {
   color: green;
+}
+
+input:focus {
+  border: 5px solid black;
 }
 
 /*----------------------------- media queries---------------------------------*/

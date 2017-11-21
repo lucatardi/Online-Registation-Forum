@@ -22,14 +22,19 @@
           <legend> Contact Information </legend>
           <label for="name"> Full Name </label>
           <input required type="text" name="user-name" id="name" placeholder="Required">
+
           <label for="mail" class="childcontact"> E-mail Address </label>
           <input required type="email" name="user-email" id="mail" placeholder="Required">
+
           <label for="number"> Phone Number </label>
           <input type="tel" name="user-number" id="number" placeholder="Mobile"> <!-- type="tel" only available in Safari -->
+
           <label for="address"> Street Address </label>
           <input type="text" name="user-address" id="address">
+
           <label for="city"> City </label>
           <input type="text" name="user-city" id="city"> <!-- type="city" didn't find -->
+
           <label for="state"> State </label>
           <select name="user-state" id="state">
             <option value="" disabled selected>Choose State</option>
@@ -39,15 +44,18 @@
             <option value="city-4"> State 4 </option>
             <option value="city-5"> State 5 </option>
           </select>
+
           <label for="zipcode"> Zip Code </label>
           <input type="text" name="user-zipcode" id="zipcode">
         </fieldset>
         <fieldset id="newsletter" class="second-container">
           <legend> Newsletter </legend>
+
           <p> Select the newsletters you would like to recieve </p>
             <input type="checkbox" value="news" id="html-news"> <label for="html-news">HTML news </label> <br>
             <input type="checkbox" value="news" id="css-news"> <label for="css-news">CSS news </label> <br>
             <input type="checkbox" value="news" id="javascript-news"> <label for="javascript-news">Javascript news </label> <br>
+
           <p> Newsletter format </p>
             <input type="radio" name="user-format" id="html-format"> <label for="html-format">HTML </label> <br>
             <input type="radio" name="user-format" id="text-format"> <label for="text-format">Plain text </label> <br>
