@@ -1,0 +1,169 @@
+/* --------------------------------reset------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+/* --------------------------- font stiles ---------------------------------- */
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Vollkorn SC', serif;
+  color: white;
+  padding: 20px 0;
+}
+
+p,
+label {
+  font-size: 1em;
+  color: #bcbaba;
+}
+
+legend,
+h2 {
+  font-size: 1.2em;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+p {
+  padding: 10px 0;
+}
+
+.last {
+  padding:0;
+  text-align: center;
+  font-style: italic;
+}
+
+/*---------------------- divs styles --------------------------*/
+
+header {
+  text-align: center;
+  background-color: #40414f;
+}
+
+.first-part {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+main {
+  margin: 0 15px;
+}
+
+.border {
+  padding: 2px 0;
+  border-bottom: 2px solid black;
+  border-top: 4px solid black;
+}
+
+fieldset {
+  border: none;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.first-container {
+  border-bottom: 2px black solid;
+}
+
+/*----------------------------- Forum Style ----------------------------------*/
+#contact input,
+select,
+textarea {
+  border-radius: 5%;
+  background-color: #e5e5e5;
+  border: none;
+  height: 50px;
+}
+
+.first-container > input,
+.second-container > textarea,
+.first-container > select {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+.first-container > label,
+.textarea-label {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0 10px;
+}
+
+#zipcode {
+  width: 50%;
+}
+
+.second-container > input {
+  margin: 6px 6px 6px 0;
+}
+
+textarea {
+  height: 130px;
+}
+
+button {
+  width: 100%;
+  border-radius: 5%;
+  margin: 10px 0;
+  background-color: #2cccae;
+  height: 40px;
+  border: none;
+  color: white;
+}
+
+/* ----------------------------meta-tag-------------------------------------- */
+
+::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.8);
+  text-align: right;
+  padding: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+form:focus {
+  border: 5px solid lightblue;
+}
+
+h1:hover {
+  color: green;
+}
+
+/*----------------------------- media queries---------------------------------*/
+
+@media(min-width: 768px) {
+  main {
+    margin: 0 25%;
+  }
+
+  .first-container > label {
+    float: left;
+    width: 30%;
+    padding: 16px 0;
+    margin: 10px 0;
+  }
+
+  .first-container > input,
+  .first-container > select {
+    float: right;
+    width: 70%;
+    margin: 10px 0;
+  }
+
+  #zipcode {
+    width: 25%;
+    float: none;
+  }
+
+
+
+}
